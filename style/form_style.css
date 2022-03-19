@@ -1,0 +1,156 @@
+#background_image_form{
+    filter: brightness(1.1) invert(0);
+    text-align:center;
+    height: 100vh;
+    background-image: url("http://www.thegreatcoursesdaily.com/wp-content/uploads/2017/08/Japanese-food.jpg");
+    background-size: cover;
+}
+
+#formTitle {
+    height: 30px;
+    width: 100%;
+    font-size: 28px;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topTitle {
+  top: 50%;
+  color: white!important;
+  text-shadow: 1px 1px 2px black;
+}
+
+#formContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#formContainerLogin {
+  margin-top: 100px;
+  width: 100%;
+  height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.formDivider {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.inputStyle {
+    height: 32px;
+    width: fit-content;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+.inputStyleRadio {
+  border: none;
+}
+
+.instructions {
+  width: 400px;
+
+}
+
+.inputStyle:focus{
+  text-align: left;
+}
+
+#newRecipeDesc {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+#ingredientsForm {
+  border: 1px orange solid;
+}
+
+#formSubmit {
+  background-color: #D86C6C;
+  cursor: pointer;
+  color: white;
+  height: 38px;
+  font-size: 22px;
+}
+
+#formSubmit:focus {
+  text-align: none;
+}
+
+.add_button {
+  margin-top: 10px;
+  font-size: 12px;
+  height: 14px;
+  width: fit-content;
+  padding: 10px 16px 10px 16px;
+  border-radius: 15px;
+  background-color: #D86C6C;
+  cursor: pointer;
+  color: white;
+}
+/* --------------------- SCROLL ANIMATION ------------------- */
+
+#icon-scroll-form,
+#icon-scroll-form:before {
+    position: absolute;
+    left: 50%
+}
+
+#icon-scroll-form {
+    width: 30px;
+    height: 50px;
+    margin-left: -20px;
+    bottom: 10px;
+    border: 3px solid white;
+    border-radius: 25px
+}
+
+#icon-scroll-form:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: white;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(26px)
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  #formTitle {
+    text-shadow: 1px 1px 2px black;
+  }
+}
